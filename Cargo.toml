@@ -1,0 +1,18 @@
+[package]
+name = "env_int"
+version = "0.1.0"
+author = "djdisodo@gmail.com"
+edition = "2021"
+license = "MIT"
+documentation = "https://docs.rs/env_int/latest/"
+repository = "https://github.com/djdisodo/env_int"
+description = "env_int!(\"env_name\", (fallback value)) macro"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1.0"
+proc-macro2 = "1.0"
+syn = { version = "2.0.39", features = ["full"] }
+derive-syn-parse = "0.1.5"
